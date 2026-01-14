@@ -1,0 +1,359 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/nouha.laamech/ontologies/2026/0/untitled-ontology-25"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/nouha.laamech/ontologies/2026/0/untitled-ontology-25">
+    <Prefix name="" IRI="http://www.semanticweb.org/nouha.laamech/ontologies/2026/0/untitled-ontology-25/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Action"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cause"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ComplianceFinding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ComplianceStatus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Context"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Disclosure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FirstParty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FirstPartyPolicy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InconsistentRequirement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JointPolicy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Localisation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Manner"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Operation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PrivacyPolicy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PrivacyRequirement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Purpose"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PurposeMismatch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Report"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Retention"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SatisfiedRequirement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Subject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Temporal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ThirdParty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ThirdPartyPolicy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnderspecifiedRequirement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#View"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ViolatedRequirement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#declaredBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#describesOperation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#fppurposemismatch"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasContext"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFirstPartyPolicy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasInconsistency"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPolicy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPrivacyRequirements"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPurpose"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPurposeMismatch"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasReport"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSubject"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasThirdPartyPartner"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasThirdPartyPolicy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasView"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tppurposemismatch"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Cause"/>
+        <Class IRI="#Context"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComplianceFinding"/>
+        <Class IRI="#Report"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComplianceStatus"/>
+        <Class IRI="#Report"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Disclosure"/>
+        <Class IRI="#PrivacyRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FirstParty"/>
+        <Class IRI="#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FirstPartyPolicy"/>
+        <Class IRI="#PrivacyPolicy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InconsistentRequirement"/>
+        <Class IRI="#ComplianceFinding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Localisation"/>
+        <Class IRI="#Context"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Manner"/>
+        <Class IRI="#Context"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Purpose"/>
+        <Class IRI="#PrivacyRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PurposeMismatch"/>
+        <Class IRI="#InconsistentRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Retention"/>
+        <Class IRI="#PrivacyRequirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SatisfiedRequirement"/>
+        <Class IRI="#ComplianceFinding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Temporal"/>
+        <Class IRI="#Context"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ThirdParty"/>
+        <Class IRI="#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ThirdPartyPolicy"/>
+        <Class IRI="#PrivacyPolicy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnderspecifiedRequirement"/>
+        <Class IRI="#ComplianceFinding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ViolatedRequirement"/>
+        <Class IRI="#ComplianceFinding"/>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#fppurposemismatch"/>
+        <ObjectProperty IRI="#hasInconsistency"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasFirstPartyPolicy"/>
+        <ObjectProperty IRI="#hasPolicy"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPurpose"/>
+        <ObjectProperty IRI="#hasPrivacyRequirements"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPurposeMismatch"/>
+        <ObjectProperty IRI="#hasInconsistency"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasThirdPartyPolicy"/>
+        <ObjectProperty IRI="#hasPolicy"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#tppurposemismatch"/>
+        <ObjectProperty IRI="#hasInconsistency"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#declaredBy"/>
+        <Class IRI="#Operation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#describesOperation"/>
+        <Class IRI="#PrivacyPolicy"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#fppurposemismatch"/>
+        <Class IRI="#PurposeMismatch"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAction"/>
+        <Class IRI="#Operation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasContext"/>
+        <Class IRI="#Operation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFirstPartyPolicy"/>
+        <Class IRI="#JointPolicy"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPurpose"/>
+        <Class IRI="#Operation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPurposeMismatch"/>
+        <Class IRI="#Operation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasReport"/>
+        <Class IRI="#JointPolicy"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSubject"/>
+        <Class IRI="#Operation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasThirdPartyPartner"/>
+        <Class IRI="#FirstParty"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasThirdPartyPolicy"/>
+        <Class IRI="#JointPolicy"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasView"/>
+        <Class IRI="#Operation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tppurposemismatch"/>
+        <Class IRI="#PurposeMismatch"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#declaredBy"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#describesOperation"/>
+        <Class IRI="#Operation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#fppurposemismatch"/>
+        <Class IRI="#FirstParty"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAction"/>
+        <Class IRI="#Action"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasContext"/>
+        <Class IRI="#Context"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFirstPartyPolicy"/>
+        <Class IRI="#FirstPartyPolicy"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPurpose"/>
+        <Class IRI="#Purpose"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPurposeMismatch"/>
+        <Class IRI="#Operation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasReport"/>
+        <Class IRI="#Report"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSubject"/>
+        <Class IRI="#Subject"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasThirdPartyPartner"/>
+        <Class IRI="#ThirdParty"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasView"/>
+        <Class IRI="#View"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tppurposemismatch"/>
+        <Class IRI="#ThirdParty"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
